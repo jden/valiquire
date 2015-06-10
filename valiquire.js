@@ -3,7 +3,7 @@ var readdirp         =  require('readdirp')
   , map              =  require('map-stream')
   , fs               =  require('fs')
   , validateRequires =  require('./validate-requires')
-  , colors           =  require('ansicolors')
+  // , colors           =  require('ansicolors')
   , directoryFilter  =  [ '!node_modules', '!.git', '!.svn' ];
 
 module.exports = function (root, redirect, cb) {
@@ -36,7 +36,7 @@ module.exports = function (root, redirect, cb) {
     .pipe(map(readFile))
     .pipe(map(validate))
     .on('data', function (data) {
-      process.stdout.write(data.length ? notOk : ok);
+      // process.stdout.write(data.length ? notOk : ok);
       errors = errors.concat(data);
     })
     .on('end', function () { 

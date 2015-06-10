@@ -1,5 +1,5 @@
 {
-  "name": "valiquire",
+  "name": "valiquire-silent",
   "version": "0.3.0",
   "description": "Validates that all require statements in a project point to an existing path and are correctly cased.",
   "main": "valiquire.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/thlorenz/valiquire.git"
+    "url": "git://github.com/jden/valiquire.git"
   },
   "keywords": [
     "require",
@@ -26,7 +26,6 @@
   "license": "MIT",
   "readmeFilename": "README.md",
   "dependencies": {
-    "ansicolors": "~0.2.1",
     "detective": "~0.2.1",
     "map-stream": "0.0.1",
     "readdirp": "~1.0.1",
