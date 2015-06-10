@@ -26,8 +26,6 @@ module.exports = function (root, redirect, cb) {
   }
 
   var errors = []
-    , notOk = colors.red('\u2639 ') 
-    , ok = colors.brightGreen('\u00b7');
 
   readdirp({ root: root, fileFilter: '*.js', directoryFilter: directoryFilter })
     .on('error', function (err) { 
