@@ -1,6 +1,6 @@
 {
   "name": "valiquire-silent",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Validates that all require statements in a project point to an existing path and are correctly cased.",
   "main": "valiquire.js",
   "bin": {
